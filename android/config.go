@@ -471,11 +471,11 @@ func (c *config) ResourceOverlays() []string {
 }
 
 func (c *config) JavaSourceOverlays() string {
-	return String(c.productVariables.Xenon.Java_Source_Overlays)
+	return String(c.productVariables.Paosp.Java_Source_Overlays)
 }
 
 func (c *config) JavaSourceOverlayModuleWhitelist() []string {
-	return android.XenonConfig.JavaSourceOverlayModuleWhitelist
+	return android.PaospConfig.JavaSourceOverlayModuleWhitelist
 }
 
 func (c *config) PlatformVersionName() string {
@@ -787,7 +787,7 @@ func (c *deviceConfig) DeviceKernelHeaderDirs() []string {
 }
 
 func (c *deviceConfig) SpecificCameraParametersLibrary() string {
-	return String(c.config.productVariables.Xenon.Specific_camera_parameter_library)
+	return String(c.config.productVariables.Paosp.Specific_camera_parameter_library)
 }
 
 func (c *deviceConfig) NativeCoverageEnabled() bool {
