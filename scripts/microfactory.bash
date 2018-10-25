@@ -59,7 +59,7 @@ function soong_build_go
     BUILDDIR=$(getoutdir) \
       SRCDIR=${TOP} \
       BLUEPRINTDIR=${TOP}/build/blueprint \
-      EXTRA_ARGS="-pkg-path android/soong=${TOP}/build/soong -pkg-path xenon/soong=${TOP}/vendor/paosp/build/soong" \
+      EXTRA_ARGS="-pkg-path android/soong=${TOP}/build/soong -pkg-path pornaosp/soong=${TOP}/vendor/paosp/build/soong" \
       build_go $@
 }
 
